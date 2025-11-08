@@ -1,0 +1,53 @@
+
+hemisferio = input("¿En qué hemisferio te encontrás? (N/S): ").upper()
+mes = input("¿En qué mes estamos?: ").lower()
+dia = int(input("¿Qué día es?: "))
+if mes == "diciembre":
+    if dia >= 21:
+        estacion_norte = "Invierno"
+        estacion_sur = "Verano"
+    else:
+        estacion_norte = "Otoño"
+        estacion_sur = "Primavera"
+elif mes == "enero" or mes == "febrero":
+    estacion_norte = "Invierno"
+    estacion_sur = "Verano"
+elif mes == "marzo":
+    if dia >= 21:
+        estacion_norte = "Primavera"
+        estacion_sur = "Otoño"
+    else:
+        estacion_norte = "Invierno"
+        estacion_sur = "Verano"
+elif mes == "abril" or mes == "mayo":
+    estacion_norte = "Primavera"
+    estacion_sur = "Otoño"
+elif mes == "junio":
+    if dia >= 21:
+        estacion_norte = "Verano"
+        estacion_sur = "Invierno"
+    else:
+        estacion_norte = "Primavera"
+        estacion_sur = "Otoño"
+elif mes == "julio" or mes == "agosto":
+    estacion_norte = "Verano"
+    estacion_sur = "Invierno"
+elif mes == "septiembre":
+    if dia >= 21:
+        estacion_norte = "Otoño"
+        estacion_sur = "Primavera"
+    else:
+        estacion_norte = "Verano"
+        estacion_sur = "Invierno"
+elif mes == "octubre" or mes == "noviembre":
+    estacion_norte = "Otoño"
+    estacion_sur = "Primavera"
+else:
+    print("Mes no válido.")
+    exit()
+if hemisferio == "N":
+    print(f"En el hemisferio norte es {estacion_norte}.")
+elif hemisferio == "S":
+    print(f"En el hemisferio sur es {estacion_sur}.")
+else:
+    print("Hemisferio no válido. Debe ser 'N' o 'S'.")

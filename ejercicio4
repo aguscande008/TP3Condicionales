@@ -1,0 +1,9 @@
+edaad = int(input("Ingrese su edad: "))
+if edaad < 12:
+    print ("Niño/a")
+elif edaad >= 12 and edaad < 18: 
+    print("Adolescente")
+elif edaad >= 18 and edaad < 30:
+    print("Adulto/a joven")
+else:
+    print("Adulto/a") 

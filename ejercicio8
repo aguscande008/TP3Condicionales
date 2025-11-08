@@ -1,0 +1,15 @@
+nombre = input("Ingrese su nombre:")
+print("Opciones:")
+print("1. Si quiere su nombre en mayúsculas.")
+print("2. Si quiere su nombre en minúsculas.")
+print("3. Si quiere su nombre con la primera letra mayúscula.")
+numero = input("Ingrese el número de la opción que desea:")
+if numero == "1": 
+    resultado = nombre.upper()
+elif numero == "2":
+    resultado = nombre.lower()
+elif numero == "3":
+    resultado = nombre.title()
+else: 
+    print("Opción no válida")
+print("Resultado de la opción elegida: ", resultado)
